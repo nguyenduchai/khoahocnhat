@@ -6,15 +6,14 @@
   <title><?= htmlspecialchars($course['title']) ?> - Chi tiết khóa học</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/daisyui"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Inter', sans-serif; }</style>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="bg-white text-gray-800">
+<body>
 
 <!-- Header (reusable include if needed) -->
 <header class="navbar bg-white shadow-md sticky top-0 z-40">
   <div class="container mx-auto px-4 flex justify-between items-center py-2">
-    <a href="index.php" class="text-xl font-bold text-blue-900">Nihongo Learn</a>
+    <a href="index.php" class="brand">Nihongo Learn</a>
     <a href="index.php" class="btn btn-ghost">Trang chủ</a>
   </div>
 </header>

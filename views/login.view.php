@@ -6,10 +6,9 @@
   <title>Đăng nhập - Nihongo Learn</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/daisyui"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Inter', sans-serif; }</style>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="bg-white text-gray-800 flex items-center justify-center min-h-screen">
+<body class="flex items-center justify-center min-h-screen">
 
 <div class="w-full max-w-md p-8 space-y-6 bg-white border rounded-lg shadow-md">
   <h2 class="text-2xl font-bold text-center text-blue-800">Đăng nhập tài khoản</h2>

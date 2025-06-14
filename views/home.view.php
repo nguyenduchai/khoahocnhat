@@ -6,16 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/daisyui"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Inter', sans-serif; }</style>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="bg-white text-gray-800">
+<body>
 
 <!-- Header -->
 <header class="navbar bg-white fixed top-0 left-0 right-0 z-50 shadow">
   <div class="container mx-auto px-4 flex justify-between items-center">
-    <a href="index.php" class="text-xl font-bold text-blue-900">Nihongo Learn</a>
+    <a href="index.php" class="brand">Nihongo Learn</a>
     <div class="hidden md:flex space-x-4">
       <a href="index.php" class="btn btn-ghost">Trang chủ</a>
       <a href="course.php" class="btn btn-ghost">Khóa học</a>

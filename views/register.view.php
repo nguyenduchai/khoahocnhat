@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/daisyui@latest"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
   <div class="min-h-screen flex flex-col items-center justify-center px-4">
     <div class="w-full max-w-md bg-white p-6 rounded shadow">
