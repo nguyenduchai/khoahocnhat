@@ -20,6 +20,9 @@
       <a href="index.php" class="btn btn-ghost">Trang chủ</a>
       <a href="course.php" class="btn btn-ghost">Khóa học</a>
       <a href="#contact" class="btn btn-ghost">Liên hệ</a>
+      <?php if (AdminController::isAdmin()): ?>
+        <a href="views/admin/dashboard.view.php" class="btn btn-ghost">Quản trị</a>
+      <?php endif; ?>
       <?php if (!isset($_SESSION['user_id'])): ?>
         <a href="login.php" class="btn btn-outline btn-primary">Đăng nhập</a>
       <?php else: ?>
@@ -33,6 +36,9 @@
           <li><a href="index.php">Trang chủ</a></li>
           <li><a href="course.php">Khóa học</a></li>
           <li><a href="#contact">Liên hệ</a></li>
+          <?php if (AdminController::isAdmin()): ?>
+            <li><a href="views/admin/dashboard.view.php">Quản trị</a></li>
+          <?php endif; ?>
           <?php if (!isset($_SESSION['user_id'])): ?>
             <li><a href="login.php">Đăng nhập</a></li>
           <?php else: ?>
