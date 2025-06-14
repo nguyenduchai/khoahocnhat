@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/daisyui@latest"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body>
 
   <!-- Header -->
-  <?php include 'partials/header.php'; ?>
+  <?php include __DIR__ . '/partials/header.php'; ?>
 
   <div class="container mx-auto px-4 pt-24 pb-10 max-w-2xl">
     <h2 class="text-2xl font-bold mb-6 text-blue-800">Thông tin tài khoản</h2>

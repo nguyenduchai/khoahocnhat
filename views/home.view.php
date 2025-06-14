@@ -6,14 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/daisyui"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Inter', sans-serif; }</style>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body class="bg-white text-gray-800">
+<body>
 
 <!-- Header -->
+<!-- <<<<<<< codex/thêm-tính-năng-thông-tin-tài-khoản -->
 <?php include 'partials/header.php'; ?>
+<!-- ======= -->
+<!-- codex/hiển-thị-menu-cho-admin -->
+<header class="navbar bg-white fixed top-0 left-0 right-0 z-50 shadow">
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    <a href="index.php" class="brand">Nihongo Learn</a>
+    <div class="hidden md:flex space-x-4">
+      <a href="index.php" class="btn btn-ghost">Trang chủ</a>
+      <a href="course.php" class="btn btn-ghost">Khóa học</a>
+      <a href="#contact" class="btn btn-ghost">Liên hệ</a>
+      <?php if (AdminController::isAdmin()): ?>
+        <a href="views/admin/dashboard.view.php" class="btn btn-ghost">Quản trị</a>
+      <?php endif; ?>
+      <?php if (!isset($_SESSION['user_id'])): ?>
+        <a href="login.php" class="btn btn-outline btn-primary">Đăng nhập</a>
+      <?php else: ?>
+        <a href="logout.php" class="btn btn-outline btn-error">Đăng xuất</a>
+      <?php endif; ?>
+    </div>
+    <div class="md:hidden">
+      <details class="dropdown">
+        <summary class="btn btn-ghost">☰</summary>
+        <ul class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="index.php">Trang chủ</a></li>
+          <li><a href="course.php">Khóa học</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+          <?php if (AdminController::isAdmin()): ?>
+            <li><a href="views/admin/dashboard.view.php">Quản trị</a></li>
+          <?php endif; ?>
+          <?php if (!isset($_SESSION['user_id'])): ?>
+            <li><a href="login.php">Đăng nhập</a></li>
+          <?php else: ?>
+            <li><a href="logout.php">Đăng xuất</a></li>
+          <?php endif; ?>
+        </ul>
+      </details>
+    </div>
+  </div>
+</header>
+=======
+<?php include __DIR__ . '/partials/header.php'; ?>
+<!-- main -->
+<!-- >>>>>>> main  -->
 
 <!-- Hero Section -->
 <section class="pt-24 pb-12 bg-gradient-to-r from-red-100 via-white to-blue-100 text-center">
