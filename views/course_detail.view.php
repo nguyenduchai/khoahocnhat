@@ -12,7 +12,26 @@
 <body class="bg-white text-gray-800">
 
 <!-- Header (reusable include if needed) -->
+<!-- codex/hiển-thị-menu-cho-admin -->
+<header class="navbar bg-white shadow-md sticky top-0 z-40">
+  <div class="container mx-auto px-4 flex justify-between items-center py-2">
+    <a href="index.php" class="text-xl font-bold text-blue-900">Nihongo Learn</a>
+    <div class="space-x-2">
+      <a href="index.php" class="btn btn-ghost">Trang chủ</a>
+      <?php if (AdminController::isAdmin()): ?>
+        <a href="views/admin/dashboard.view.php" class="btn btn-ghost">Quản trị</a>
+      <?php endif; ?>
+      <?php if (!isset($_SESSION['user_id'])): ?>
+        <a href="login.php" class="btn btn-outline btn-primary">Đăng nhập</a>
+      <?php else: ?>
+        <a href="logout.php" class="btn btn-outline btn-error">Đăng xuất</a>
+      <?php endif; ?>
+    </div>
+  </div>
+</header>
+=======
 <?php include __DIR__ . '/partials/header.php'; ?>
+<!-- main -->
 
 <!-- Course Detail Section -->
 <main class="container mx-auto px-4 py-8">
