@@ -11,7 +11,7 @@
 <body>
 
   <!-- Header -->
-  <?php include 'partials/header.php'; ?>
+  <?php include __DIR__ . '/partials/header.php'; ?>
 
   <div class="container mx-auto px-4 pt-24 pb-10 max-w-2xl">
     <h2 class="text-2xl font-bold mb-6 text-blue-800">Thông tin tài khoản</h2>

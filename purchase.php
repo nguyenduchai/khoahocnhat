@@ -1,7 +1,6 @@
 <?php
 require_once 'includes/config.php';
 require_once 'controllers/PaymentController.php';
-session_start();
 
 // Kiểm tra đăng nhập
 if (!isset($_SESSION['user_id'])) {
