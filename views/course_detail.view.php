@@ -10,6 +10,10 @@
 </head>
 <body>
 
+<!-- <<<<<<< codex/thêm-tính-năng-thông-tin-tài-khoản -->
+<!-- Header -->
+<?php include 'partials/header.php'; ?>
+=======
 <!-- Header (reusable include if needed) -->
 <!-- codex/hiển-thị-menu-cho-admin -->
 <header class="navbar bg-white shadow-md sticky top-0 z-40">
@@ -36,6 +40,7 @@
 =======
 <?php include __DIR__ . '/partials/header.php'; ?>
 <!-- main -->
+<!-- >>>>>>> main -->
 
 <!-- Course Detail Section -->
 <main class="container mx-auto px-4 py-8">
