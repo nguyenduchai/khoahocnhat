@@ -13,6 +13,7 @@
 <body class="bg-white text-gray-800">
 
 <!-- Header -->
+<!-- codex/hiển-thị-menu-cho-admin -->
 <header class="navbar bg-white fixed top-0 left-0 right-0 z-50 shadow">
   <div class="container mx-auto px-4 flex justify-between items-center">
     <a href="index.php" class="text-xl font-bold text-blue-900">Nihongo Learn</a>
@@ -49,6 +50,9 @@
     </div>
   </div>
 </header>
+=======
+<?php include __DIR__ . '/partials/header.php'; ?>
+<!-- main -->
 
 <!-- Hero Section -->
 <section class="pt-24 pb-12 bg-gradient-to-r from-red-100 via-white to-blue-100 text-center">

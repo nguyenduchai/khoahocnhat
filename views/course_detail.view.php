@@ -12,6 +12,7 @@
 <body class="bg-white text-gray-800">
 
 <!-- Header (reusable include if needed) -->
+<!-- codex/hiển-thị-menu-cho-admin -->
 <header class="navbar bg-white shadow-md sticky top-0 z-40">
   <div class="container mx-auto px-4 flex justify-between items-center py-2">
     <a href="index.php" class="text-xl font-bold text-blue-900">Nihongo Learn</a>
@@ -28,6 +29,9 @@
     </div>
   </div>
 </header>
+=======
+<?php include __DIR__ . '/partials/header.php'; ?>
+<!-- main -->
 
 <!-- Course Detail Section -->
 <main class="container mx-auto px-4 py-8">
