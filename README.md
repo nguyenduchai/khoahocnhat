@@ -1,4 +1,4 @@
-# 📘 Nihongo Learn - Website Học Tiếng Nhật
+# 📘 Nihongo Learn - Website BÁN KHÓA HỌC Tiếng Nhật BẰNG VIDEO
 
 Dự án web PHP học tiếng Nhật qua video, hỗ trợ thanh toán thủ công bằng ảnh chuyển khoản, quản trị thủ công đơn hàng và quản lý nội dung khóa học.
 
