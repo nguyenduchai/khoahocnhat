@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --primary-color: #1e3a8a;
+  --accent-color: #e11d48;
+  --text-color: #374151;
+  --bg-light: #f8fafc;
+  --bg-dark: #ffffff;
+  --radius: 0.5rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.navbar {
+  background-color: var(--bg-dark);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar a {
+  color: var(--text-color);
+}
+
+.navbar .brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+}
+
+.btn-outline {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.card {
+  border-radius: var(--radius);
+  background-color: var(--bg-dark);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.alert {
+  border-radius: var(--radius);
+}
+
+.link-primary {
+  color: var(--primary-color);
+}
+
+.table th {
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  font-weight: 600;
+}
