@@ -11,21 +11,8 @@
 </head>
 <body class="bg-white text-gray-800">
 
-<!-- Header (reusable include if needed) -->
-<header class="navbar bg-white shadow-md sticky top-0 z-40">
-  <div class="container mx-auto px-4 flex justify-between items-center py-2">
-    <a href="index.php" class="text-xl font-bold text-blue-900">Nihongo Learn</a>
-    <div class="flex space-x-2">
-      <a href="index.php" class="btn btn-ghost">Trang chủ</a>
-      <?php if (isset($_SESSION['user_id'])): ?>
-        <a href="profile.php" class="btn btn-ghost">Tài khoản</a>
-        <a href="logout.php" class="btn btn-outline btn-error">Đăng xuất</a>
-      <?php else: ?>
-        <a href="login.php" class="btn btn-outline btn-primary">Đăng nhập</a>
-      <?php endif; ?>
-    </div>
-  </div>
-</header>
+<!-- Header -->
+<?php include 'partials/header.php'; ?>
 
 <!-- Course Detail Section -->
 <main class="container mx-auto px-4 py-8">
