@@ -23,6 +23,7 @@
       <?php if (!isset($_SESSION['user_id'])): ?>
         <a href="login.php" class="btn btn-outline btn-primary">Đăng nhập</a>
       <?php else: ?>
+        <a href="profile.php" class="btn btn-ghost">Tài khoản</a>
         <a href="logout.php" class="btn btn-outline btn-error">Đăng xuất</a>
       <?php endif; ?>
     </div>
@@ -36,6 +37,7 @@
           <?php if (!isset($_SESSION['user_id'])): ?>
             <li><a href="login.php">Đăng nhập</a></li>
           <?php else: ?>
+            <li><a href="profile.php">Tài khoản</a></li>
             <li><a href="logout.php">Đăng xuất</a></li>
           <?php endif; ?>
         </ul>
